@@ -159,7 +159,7 @@ $headers = 'From: '.$email_from."\r\n".
 
 <div class="row">
 <div class="large-12 columns">
-<img class="logo" src="assets/logo/maloneyPainting.svg" alt="Maloney Painting Logo">
+<a href="index.html"><img class="logo" src="assets/logo/maloneyPainting.svg" alt="Maloney Painting Logo"></a>
 </div>
 </div>
 
