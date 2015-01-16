@@ -1,4 +1,5 @@
 ## Todos
+[ ] Add .htaccess file w/ 301 redirect
 [ ] Add Photos to about or services page
 [ ] Text update to homepage
 [ ] The Denver, Colorado button/link is irritating and pointless 
