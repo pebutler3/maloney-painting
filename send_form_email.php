@@ -127,8 +127,7 @@ $headers = 'From: '.$email_from."\r\n".
    <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
 </head>
 <body>
-
-<!--Start Top-bar Navigation-->
+<header>
 <div class="fixed shadow">
 <div class="contain-to-grid">
 <nav class="top-bar" data-topbar>
@@ -162,7 +161,9 @@ $headers = 'From: '.$email_from."\r\n".
 <a href="index.html"><img class="logo" src="assets/logo/maloneyPainting.svg" alt="Maloney Painting Logo"></a>
 </div>
 </div>
+</header>
 
+<main>
 <div class="panel">
 <div class="row">
 <div class="large-12 columns">
@@ -172,6 +173,7 @@ $headers = 'From: '.$email_from."\r\n".
 </div>
 </div>
 </div>
+</main>
 
 <footer>
 <div class="row">
