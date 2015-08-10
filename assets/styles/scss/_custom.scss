@@ -1,0 +1,74 @@
+$red         :#D74B4E;
+$gray        :#515151;
+$blue        :#79BACC;
+
+$facebook    :#4B67A1;
+$twitter     :#55ACEE;
+$google      :#D94A35;
+
+.shadow{
+-webkit-box-shadow: 0px 4px 5px $gray;
+   -moz-box-shadow: 0px 4px 5px $gray;
+        box-shadow: 0px 4px 5px $gray;
+}
+h2[before_after] {
+ padding-bottom: .5em;
+}
+.logo {
+  display: block;
+  margin-top: 3em;
+}
+.panel {
+  a{ color: $red; }
+}
+footer a {
+ color: $red;
+ &:hover {
+ color: $gray;
+ text-decoration: underline;
+ }
+}
+
+ .sitemap {
+   text-align:left;
+ }
+
+textarea {
+  border: 0;
+}
+input[type="text"] {
+  border: 0;
+}
+input[type="email"] {
+  border: 0;
+}
+
+/*
+
+Social Media Icons
+
+*/
+
+.fa-facebook {
+  color: $red;
+  &:hover {
+   color: $facebook;
+  }
+}
+.fa-twitter {
+  color:$red;
+  &:hover {
+   color:$twitter;
+  }
+}
+.fa-google-plus {
+	color: $red;
+  &:hover {
+   color: darken($google,10%);
+  }
+}
+
+.house {
+  border: 8px solid;
+  border-color: darken($blue,5%);
+}
