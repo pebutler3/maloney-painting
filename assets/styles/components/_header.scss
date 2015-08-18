@@ -1,0 +1,32 @@
+header {
+  background: url(../assets/img/hero.jpg) no-repeat center center;
+  background-size: cover;
+  margin-top: -1em;
+  nav {
+   @include grid-row;
+   background: $red;
+   ul {
+    @include grid-column(8, $center: true);
+    list-style: none;
+    padding-top: .5em;
+    li {
+     display: inline;
+     padding-right: 1em;
+     font-size: 24px;
+     font-weight: 200;
+    }
+   }
+  }
+  a {
+   color: $white;
+   text-decoration: none;
+   text-transform: uppercase;
+   letter-spacing: 2px;
+  }
+  img {
+   display: block;
+   width: 750px;
+   padding: 3em 0 4em 0;
+   margin: 0 auto;
+  }
+}

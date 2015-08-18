@@ -1,0 +1,28 @@
+footer {
+  @include panel($bg: $blue, $border: false);
+  margin: 0;
+  .footer-info {
+   @include grid-row();
+    nav{
+     ul {
+      @include grid-column(6);
+      list-style: none;
+      padding: 0;
+      li {
+       display: inline;
+       a {
+        font-weight: bold;
+        text-transform: uppercase;
+       }
+      }
+    }
+    section.copyright {
+     @include grid-column(6);
+    }
+   }
+  }
+  a {
+   color: $red;
+   text-decoration: none;
+  }
+}
