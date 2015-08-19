@@ -1,28 +1,43 @@
+// type
+$lt-font: 200;
+$med-font: 400;
+h1 {
+  font-size: 46px;
+  font-weight: $lt-font;
+  line-height: 20px;
+}
+h2 {
+  font-weight: $med-font;
+  letter-spacing: 1px;
+}
 $row-width: 100%;
 main {
   @include grid-row;
   background: $white;
   position: relative;
   &:before {
-  content: '';
-  position: absolute;
-  left: 0;
-  top: -30px;
-  width: 100%;
-  height: 50px;
-  background: $white;
-  -webkit-transform: skewY(-1.5deg);
-  -moz-transform: skewY(-1.5deg);
-  -ms-transform: skewY(-1.5deg);
-  -o-transform: skewY(-1.5deg);
-  transform: skewY(-1.5deg);
+    content: '';
+    position: absolute;
+    left: 0;
+    // top: -28px;
+    width: 100%;
+    height: 10px;
+    background: $white;
+    // -webkit-transform: skewY(-1.5deg);
+    // -moz-transform: skewY(-1.5deg);
+    // -ms-transform: skewY(-1.5deg);
+    // -o-transform: skewY(-1.5deg);
+    // transform: skewY(-1.5deg);
   }
-  section.one {
+}
+section {
+  @include grid-row;
+  margin: 2em 0;
+  &.one {
     @include grid-column(8, $center: true);
-    padding-top: 1em;
   }
-  section.two {
-    @include grid-row;
+  &.two {
+    @include grid-column(8, $center: true);
   }
 }
 // .shadow{
