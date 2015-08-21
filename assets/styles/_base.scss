@@ -23,12 +23,18 @@ main {
 }
 section {
   @include grid-row;
-  margin: 2em 0;
+  margin: 1em 0;
   &.one {
     @include grid-column(10, $center: true);
   }
   &.two {
     @include grid-column(10, $center: true);
+    img {
+      max-width: 300px;
+      max-height: 300px;
+      border: 2px solid $black;
+      margin-bottom: .5em;
+    }
   }
 }
 // .shadow{
