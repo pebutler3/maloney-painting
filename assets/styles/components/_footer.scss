@@ -1,28 +1,35 @@
-footer {
-  @include panel($bg: $blue, $border: false);
-  margin: 0;
-  .footer-info {
-   @include grid-row();
-    nav{
-     ul {
-      @include grid-column(6);
-      list-style: none;
-      padding: 0;
-      li {
-       display: inline;
-       a {
-        font-weight: bold;
-        text-transform: uppercase;
-       }
-      }
+.footer {
+  @include grid-row(100%);
+  background-color: #292c2f;
+  text-align: center;
+  font-size: 1.2rem;
+  padding: 4rem;
+  p {
+    &.slogan {
+      color: #8d9093;
+      font-size: 1.8rem;
+      margin: 0 0 1rem;
     }
-    section.copyright {
-     @include grid-column(6);
+    &.copywrite {
+      color: #8f9296;
+      font-size: 0.875rem;
+      margin: 0;
     }
-   }
   }
-  a {
-   color: $red;
-   text-decoration: none;
+  .links a {
+    list-style: none;
+    font-weight: bold;
+    color: #ffffff;
+    padding: 3rem 0 2rem;
+    margin: 0;
+    &::after {
+      content: "| ";
+      padding: 0 0.4rem 0 0.8rem;
+    }
+    &:last-child::after {
+      content: "";
+      padding: 0 0.4rem 0 0.8rem;
+    }
   }
 }
+
