@@ -3,6 +3,7 @@ var gulp = require('gulp'),
     browserSync = require('browser-sync'),
     minifyCss = require('gulp-minify-css'),
     plumber = require('gulp-plumber'),
+    uglify = require('gulp-uglify'),
     concat = require('gulp-concat'),
     fileinclude = require('gulp-file-include');
 
@@ -49,6 +50,15 @@ gulp.task('styles', function(){
   .pipe(concat('app.css'))
   .pipe(minifyCss())
   .pipe(gulp.dest('./_site/css'));
+});
+
+gulp.task('scripts', function(){
+  gulp.src([
+    paths.assets + '/js/app.js',
+  ])
+  .pipe(concat('app.js'))
+  .pipe(uglify())
+  .pipe(gulp.dest('./_site/js'));
 });
 
 gulp.task('default', ['styles', 'copy']);

@@ -1,6 +1,7 @@
 // type
 $lt-font: 200;
 $med-font: 400;
+
 h1 {
   font-size: 46px;
   font-weight: $lt-font;
@@ -15,29 +16,15 @@ main {
   @include grid-row;
   background: $white;
   position: relative;
-  &:before {
-    content: '';
-    position: absolute;
-    left: 0;
-    // top: -28px;
-    width: 100%;
-    height: 10px;
-    background: $white;
-    // -webkit-transform: skewY(-1.5deg);
-    // -moz-transform: skewY(-1.5deg);
-    // -ms-transform: skewY(-1.5deg);
-    // -o-transform: skewY(-1.5deg);
-    // transform: skewY(-1.5deg);
-  }
 }
 section {
   @include grid-row;
   margin: 2em 0;
   &.one {
-    @include grid-column(8, $center: true);
+    @include grid-column(10, $center: true);
   }
   &.two {
-    @include grid-column(8, $center: true);
+    @include grid-column(10, $center: true);
   }
 }
 // .shadow{
