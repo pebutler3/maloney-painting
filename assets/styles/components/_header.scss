@@ -1,7 +1,6 @@
 header {
   background: url(../assets/img/hero.svg) no-repeat center center;
   background-size: cover;
-  margin-top: -1em;
   min-height: 500px;
   nav {
    @include grid-row;
