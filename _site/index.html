@@ -15,14 +15,12 @@
   <li><a class="b-link" href="/services.html">Services</a></li>
   <li><a class="b-link" href="/contact.html">Contact Us</a></li>
 </div>
-
 <div class="b-container">
   <div class="b-menu">
     <div class="b-bun b-bun--top"></div>
     <div class="b-bun b-bun--mid"></div>
     <div class="b-bun b-bun--bottom"></div>
   </div>
-
   <a href="#" class="b-brand">Maloney Painting</a>
 </div>
 </nav>
@@ -58,7 +56,43 @@
 <!--  <img src="http://placehold.it/150x150" alt=""> -->
 <!--  <img src="http://placehold.it/150x150" alt=""> -->
 </article>
-
+<article class="services">
+  <section class="one">
+    <h2>Services We Provide</h2>
+    <h3>Residential Exterior</h3>
+    <p>Our goal for exterior projects is longevity. We have trained and experienced painters whom pay close attention to detail, ensure thorough application of paint, use caulk sealant accurately, and accurately prepare all surfaces painted and unpainted. We will provide you any and all information needed to make informed decisions regarding your colors and materials.</p>
+    <h3>Residential Interior</h3>
+    <p>Your home is your sanctuary and we respect that. Every part of every project will be handled with integrity and care. We communicate our process prior to beginning a project, and once it starts, our crew is courteous and meticulous regarding cleanliness, crisp lines, and detail.</p>
+    <h3>Commercial</h3>
+    <p>If you are a commercial representative, please contact us to speak further. We are happy to work in the commercial realm and look forward to providing you another option in quality paint contacting.</p>
+  </section>
+</article>
+<article class="contact">
+  <section class="one">
+   <form method="post" action="send_form_email.php">
+   <label for="name">
+   Name: *<small>required</small> 
+   <input type="text" name="name" required>
+   </label>
+   <small class="error" id="errorName">Please enter your name.</small>          
+   <label for="telphone">Phone: * <small>required</small>
+   <input  type="text" name="telephone" required> 
+   <small class="error" id="errorPhone">Please enter your phone number.</small>          
+   </label>
+   <label for="email">Email: * <small>required</small>
+   <input  type="email" name="email" required>
+   </label>
+   <small class="error" id="errorEmail">Please enter your email address.</small>
+   <label for="city">City:
+   <input  type="text" name="city">
+   </label>
+   <label for="comments">Comments: 
+   <textarea  name="comments" maxlength="1000" cols="25" rows="6"></textarea><br>
+   </label>
+   <input type="submit" class="button"value="Submit">
+   </form>
+  </section>
+</article>
 
 
 
