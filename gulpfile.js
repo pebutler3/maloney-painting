@@ -17,7 +17,7 @@ gulp.task('copy', function () {
         }).pipe(gulp.dest('_site/assets/img'));
 });
 
-gulp.task('serve', ['styles','fileinclude'], function() {
+gulp.task('serve', function() {
 
     browserSync.init({
         server: "./_site",
