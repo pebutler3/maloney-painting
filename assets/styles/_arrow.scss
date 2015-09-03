@@ -1,0 +1,12 @@
+@mixin arrow($border-top, $border-right, $border-left) {
+ border-top: $border-top;
+ border-right: $border-right;
+ border-left: $border-left;
+
+  @media #{$small-only} {
+   display: none;
+  }
+}
+//  border-left: 50vmax solid transparent;
+//  border-right: 50vmax solid transparent;
+//  border-top: 50px solid $black;
