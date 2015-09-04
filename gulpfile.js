@@ -55,7 +55,6 @@ gulp.task('styles', function(){
 gulp.task('scripts', function(){
   gulp.src([
     paths.assets + '/js/app.js',
-    paths.assets + '/js/slider.js',
   ])
   .pipe(concat('app.js'))
   .pipe(uglify())
