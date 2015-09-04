@@ -1,5 +1,3 @@
-@import "foundation/foundation";
-@import "colors";
-@import "base";
-@import "components/components";
-@import "mobile";
+@import "01-plugins/plugins";
+@import "02-partials/partials";
+@import "03-media/media";

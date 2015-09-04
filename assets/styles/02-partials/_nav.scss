@@ -58,6 +58,7 @@ $b-pad-top: ($b-height / 2 - $b-bun-width-half); //Vertically centers bun in men
 
 body {
   &:after {
+    position: absolute;
     background: $blue;
     content: '';
     height: 100%;

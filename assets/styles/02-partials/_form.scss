@@ -1,0 +1,32 @@
+form {
+  display: inline;
+  margin: 0 !important;
+  padding: 0 !important;
+  input[type="text"]{
+    display: inline;
+    border: 0;
+  }
+  // input[type="submit"] {
+  //   background: $red;
+  //   border-bottom: 0;
+  //   height: 50px;
+  // }
+  textarea {
+    border: 0;
+    border-bottom: 2px solid darken($blue, 40%);
+    width: 100%;
+    padding-top: 1em;
+  }
+  ::-webkit-input-placeholder {
+   color: $black;
+  }
+  :-moz-placeholder { /* Firefox 18- */
+     color: $black;  
+  }
+  ::-moz-placeholder {  /* Firefox 19+ */
+     color: $black;  
+  }
+  :-ms-input-placeholder {  
+     color: $black;  
+  }
+}

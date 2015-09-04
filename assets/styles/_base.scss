@@ -3,6 +3,7 @@ $lt-font: 200;
 $med-font: 400;
 
 $row-width: 100%;
+
 h1 {
   font-size: 46px;
   font-weight: $lt-font;
@@ -19,58 +20,62 @@ main {
   @include grid-row;
   background: $white;
   position: relative;
+  margin-top: 10em;
+  margin-bottom: 10em;
 }
-section {
+article {
   @include grid-row;
-  margin: 1em 0;
-  &.one {
+  section {
     @include grid-column(10, $center: true);
+  margin-top: 10em;
+  margin-bottom: 10em;
   }
-  &.two {
-    @include grid-column(10, $center: true);
-    img {
-      max-width: 300px;
-      max-height: 300px;
-      border: 2px solid $black;
-      margin-bottom: .5em;
+  &.about {
+    background: $blue;
+    overflow-x: hidden;
+    &:before {
+     display: block;
+     height: 0;
+     width: 0;
+     border-top: 100px solid $white;
+     border-right: 100vmax solid transparent;
+    }
+    &:after {
+      display: block;
+      height: 0;
+      width: 0;
+      border-bottom: 100px solid $white;
+      border-left: 100vmax solid transparent;
+    }
+  }
+  &.contact {
+    background: $blue;
+    overflow-x: hidden;
+    &:before {
+     display: block;
+     height: 0;
+     width: 0;
+     border-top: 100px solid $white;
+     border-right: 100vmax solid transparent;
     }
   }
 }
-article.about {
-  @include grid-row;
-  background: $blue;
-  overflow-x: hidden;
-  &:before {
-   display: block;
-   height: 0;
-   width: 0;
-   border-top: 100px solid $white;
-   border-right: 100vmax solid transparent;
-  }
-  &:after {
-   display: block;
-   border-bottom: 100px solid $white;
-   border-left: 100vmax solid transparent;
-  }
-  img {
-    @include grid-column(6);
-    display: inline-block;
-    height: 150px;
-    width: 200px;
-  }
+.arrow {
+ @include arrow(20px solid $black, 50vmax solid transparent, 50vmax solid transparent);
+ display: block;
+ margin-top: -1.1em;
 }
-article.services {
-  @include grid-row;
-}
-article.contact {
-  @include grid-row;
-  background: $red;
-  overflow-x: hidden;
-  &:before {
-   display: block;
-   height: 0;
-   width: 0;
-   border-top: 100px solid $white;
-   border-right: 100vmax solid transparent;
-  }
-}
+// &.about {
+  //   background: $blue;
+  //   overflow-x: hidden;
+  //   &:after {
+  //    display: block;
+  //    border-bottom: 100px solid $white;
+  //    border-left: 100vmax solid transparent;
+  //   }
+  //   img {
+  //     @include grid-column(6);
+  //     display: inline-block;
+  //     height: 150px;
+  //     width: 200px;
+  //   }
