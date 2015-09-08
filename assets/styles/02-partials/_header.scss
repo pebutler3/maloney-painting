@@ -4,7 +4,6 @@ header {
   min-height: 500px;
   nav {
    @include grid-row;
-   background: $blue;
    ul {
     @include grid-column(8, $center: true);
     list-style: none;
