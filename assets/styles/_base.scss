@@ -31,15 +31,8 @@ main {
 }
 article {
   @include grid-row;
-  // &.welcome {
-  //     section {
-  //       @include grid-column(8);
-  //     }
-  //     img {
-  //       @include grid-column(4);
-  //       margin-top: 12em;
-  //     }
-  // }
+  &.welcome {
+  }
   section {
     @include grid-column(10, $center: true);
     margin-top: 10em;
