@@ -1,18 +1,24 @@
 // type
 $lt-font: 200;
-$med-font: 400;
+$med-font: 600;
 
 $row-width: 100%;
 
 h1 {
   font-size: 46px;
-  font-weight: $lt-font;
+  font-weight: $med-font;
   line-height: 20px;
+  text-transform: uppercase;
 }
 h2 {
-  font-weight: $med-font;
+  font-size: 32px;
+  font-weight: $lt-font;
   letter-spacing: 1px;
+  text-transform: uppercase;
 }
+p {
+  font-size: 18px;
+} 
 a {
   text-decoration: none;
 }
@@ -25,23 +31,34 @@ main {
 }
 article {
   @include grid-row;
-  &.welcome {
-      section {
-        @include grid-column(8);
-      }
-      img {
-        @include grid-column(4);
-        margin-top: 12em;
-      }
-  }
+  // &.welcome {
+  //     section {
+  //       @include grid-column(8);
+  //     }
+  //     img {
+  //       @include grid-column(4);
+  //       margin-top: 12em;
+  //     }
+  // }
   section {
     @include grid-column(10, $center: true);
     margin-top: 10em;
     margin-bottom: 10em;
   }
   &.about {
-    background: $blue;
+    background: url(../assets/img/about-us.jpg)no-repeat center center;
+    background-size: cover;
+    // text-shadow: 1px .5px 1px $black;
     overflow-x: hidden;
+    h2 {
+      font-size: 48px;
+      font-weight: $med-font;
+    }
+    p {
+      font-size: 18px;
+      width: 600px;
+      max-width: 100%;
+    }
     &:before {
      display: block;
      height: 0;

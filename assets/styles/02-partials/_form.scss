@@ -5,17 +5,22 @@ form {
   input[type="text"]{
     display: inline;
     border: 0;
+    height: 3em;
+    width: 30%;
+    margin: 0 1em 1em 0;
   }
-  // input[type="submit"] {
-  //   background: $red;
-  //   border-bottom: 0;
-  //   height: 50px;
-  // }
   textarea {
     border: 0;
-    border-bottom: 2px solid darken($blue, 40%);
-    width: 100%;
-    padding-top: 1em;
+    width: 94%;
+    margin: 0 0 .8em 0;
+  }
+  input[type="submit"] {
+    background: $red;
+    color: $white;
+    border: 0;
+    height: 3em;
+    width: 30%;
+    text-transform: uppercase;
   }
   ::-webkit-input-placeholder {
    color: $black;

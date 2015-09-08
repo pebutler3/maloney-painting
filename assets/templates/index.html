@@ -16,7 +16,7 @@
   </article>
 </main>
 
-<article class="about">
+<article class="about" id="about">
   @@include('../../assets/includes/about/about.html')
 </article>
 
@@ -36,7 +36,18 @@
 @@include('../../assets/includes/analytics.html')
 
 <script src="../js/app.js"></script>
-
+<script src="../js/jquery.min.js"></script>
+<script>
+$('a[href^="#"][data-animate]').live('click', function() {
+  var hash = $(this).attr('href');
+  var offset = $(hash).offset();
+  if (offset) {
+    $('html, body').animate({ scrollTop: offset.top }, 'slow');
+    location.hash = hash;
+    return false;
+  }
+});
+</script>
 </body>
 </html>
  
