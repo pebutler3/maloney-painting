@@ -38,15 +38,25 @@
 <script src="../js/app.js"></script>
 <script src="../js/jquery.min.js"></script>
 <script>
-$('a[href^="#"][data-animate]').live('click', function() {
-  var hash = $(this).attr('href');
-  var offset = $(hash).offset();
-  if (offset) {
-    $('html, body').animate({ scrollTop: offset.top }, 'slow');
-    location.hash = hash;
-    return false;
-  }
-});
+ $('a[href^="#"][data-animate]').live('click', function() {
+   var hash = $(this).attr('href');
+   var offset = $(hash).offset();
+   if (offset) {
+     $('html, body').animate({ scrollTop: offset.top }, 'slow');
+     location.hash = hash;
+     return false;
+   }
+  });
+  var menuButton = $('#menuButton');
+  menuButton.on('click', function() {
+    menuButton.toggleClass('is-active');
+    $('.nav-links li a').toggle('hidden');
+  });
+//  var menuButton = document.getElementById('menuButton');
+//  menuButton.addEventListener('click', function (e) {
+//      menuButton.classList.toggle('is-active');
+//      e.preventDefault();
+//  });
 </script>
 </body>
 </html>
