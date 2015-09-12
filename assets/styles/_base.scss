@@ -3,98 +3,31 @@ $lt-font: 200;
 $med-font: 600;
 
 $row-width: 100%;
-
+body {
+  font-family: "PT Sans Caption";
+}
 h1 {
-  font-size: 46px;
+  font-size: 36px;
   font-weight: $med-font;
-  line-height: 20px;
+  line-height: 1em;
+  letter-spacing: 3px;
   text-transform: uppercase;
 }
 h2 {
-  font-size: 32px;
+  font-size: 28px;
   font-weight: $lt-font;
   letter-spacing: 1px;
   text-transform: uppercase;
 }
 p {
   font-size: 18px;
-} 
+}
 a {
   text-decoration: none;
 }
-main {
-  @include grid-row;
-  background: $white;
-  position: relative;
-  margin-top: 10em;
-  margin-bottom: 10em;
-}
-article {
-  @include grid-row;
-  &.welcome {
-  }
-  section {
-    @include grid-column(10, $center: true);
-    margin-top: 10em;
-    margin-bottom: 10em;
-  }
-  &.about {
-    background: url(../assets/img/about-us.jpg)no-repeat center center;
-    background-size: cover;
-    // text-shadow: 1px .5px 1px $black;
-    overflow-x: hidden;
-    h2 {
-      font-size: 48px;
-      font-weight: $med-font;
-    }
-    p {
-      font-size: 18px;
-      width: 600px;
-      max-width: 100%;
-    }
-    &:before {
-     display: block;
-     height: 0;
-     width: 0;
-     border-top: 100px solid $white;
-     border-right: 100vmax solid transparent;
-    }
-    &:after {
-      display: block;
-      height: 0;
-      width: 0;
-      border-bottom: 100px solid $white;
-      border-left: 100vmax solid transparent;
-    }
-  }
-  &.contact {
-    background: $blue;
-    overflow-x: hidden;
-    &:before {
-     display: block;
-     height: 0;
-     width: 0;
-     border-top: 100px solid $white;
-     border-right: 100vmax solid transparent;
-    }
-  }
-}
-.arrow {
- @include arrow(20px solid $black, 50vmax solid transparent, 50vmax solid transparent);
- display: block;
- margin-top: -1.1em;
-}
-// &.about {
-  //   background: $blue;
-  //   overflow-x: hidden;
-  //   &:after {
-  //    display: block;
-  //    border-bottom: 100px solid $white;
-  //    border-left: 100vmax solid transparent;
-  //   }
-  //   img {
-  //     @include grid-column(6);
-  //     display: inline-block;
-  //     height: 150px;
-  //     width: 200px;
-  //   }
+
+// .arrow {
+//  @include arrow(20px solid $black, 50vmax solid transparent, 50vmax solid transparent);
+//  display: block;
+//  margin-top: -1.1em;
+// }
