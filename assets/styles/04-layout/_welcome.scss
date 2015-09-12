@@ -22,7 +22,7 @@ article.welcome {
     padding-top: 100px;
     a {
       display: inline-block;
-      background: $dark-red;
+      background: $dark-red-button;
       color: $white;
       padding: 1em 1em;
       // border: 2px solid $black;
@@ -31,7 +31,7 @@ article.welcome {
       min-width: 48px;
       text-transform: uppercase;
       &:hover {
-        background: $red;
+        background: darken($dark-red-button, 5%);
         color: $white;
       }
     }
