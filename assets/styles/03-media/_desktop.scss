@@ -1,0 +1,39 @@
+@media #{$large-up} {
+	nav {
+		@include grid-column(12, $center: true);
+		margin-top: -1em;
+		margin-bottom: 2em;
+		padding-top: 1.2em;
+		padding-bottom: .2em;
+	    border-bottom: 5px solid $red;
+		section.nav-links {
+			text-align: center;
+			a {
+			  padding: 1em .5em;	
+			}
+		}
+	}
+	article {
+		&.welcome {
+			section {
+				@include grid-column(8);
+			}
+			section.estimates{
+				@include grid-column(4);
+				border-left: 8px solid $off-white;
+			}
+		}
+		&.services {
+			section {
+				padding-top: 6em;
+				padding-bottom: 6em;
+			}
+		}
+		&.contact {
+			section {
+				padding-top: 10em;
+				padding-bottom: 10em;
+			}
+		}
+	}
+}

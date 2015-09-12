@@ -1,31 +1,21 @@
 @media #{$small-only} {
-  header {
-    min-height: 300px;
-    img {
-      margin: 4em 0;
-      padding: 2em;
+  // header {
+  //   min-height: 300px;
+  //   img {
+  //     margin: 4em 0;
+  //     padding: 2em;
+  //   }
+  // }
+  article.welcome {
+    @include grid-row;
+    section {
+      @include grid-column(12);
+      height: auto;
+    }
+    section.estimates{
+      @include grid-column(12);
+      border-top: 5px solid $dark-red;
     }
   }
-  h1 {
-    font-size: 36px;
-    line-height: 40px;
-  }
-  section.one {
-    margin-top: -2em;
-  }
-  section.two img {
-    width: 100%;
-  }
 }
-@media #{$medium-only} {
-  header {
-    min-height: 400px;
-    img {
-      margin-top: 3em;
-      padding: 2em;
-    }
-  }
-  h1 {
-    line-height: 40px;
-  }
-}
+
