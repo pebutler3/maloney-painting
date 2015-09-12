@@ -1,0 +1,15 @@
+article.contact {
+    @include grid-row;
+    background: $blue;
+    overflow-x: hidden;
+    section {
+        @include grid-column(10, $center: true);
+    }
+    &:before {
+     display: block;
+     height: 0;
+     width: 0;
+     border-top: 100px solid $white;
+     border-right: 100vmax solid transparent;
+    }
+}

@@ -1,0 +1,38 @@
+main {
+  @include grid-row;
+  position: relative;
+  border-top: 5px solid $dark-red;
+  border-bottom: 5px solid $dark-red;
+}
+article.welcome {
+  section {
+    background-size: cover;
+    color: darken($gray, 5%);
+    height: auto;
+  }
+  section.estimates{
+    background: url(../assets/img/brush.jpg) no-repeat center center;
+    background-size: cover;
+    color: $black;
+    border-right: 0;
+    min-height: 500px;
+    max-height: 600px;
+    text-align: center;
+    padding-top: 100px;
+    a {
+      display: inline-block;
+      background: $dark-red;
+      color: $white;
+      padding: 1em 1em;
+      // border: 2px solid $black;
+      border-radius: 3%;
+      min-height: 48px;
+      min-width: 48px;
+      text-transform: uppercase;
+      &:hover {
+        background: $red;
+        color: $white;
+      }
+    }
+  }
+}
