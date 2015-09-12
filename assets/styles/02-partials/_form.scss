@@ -15,12 +15,15 @@ form {
     margin: 0 0 .8em 0;
   }
   input[type="submit"] {
-    background: $red;
+    background: $dark-red-button;
     color: $white;
     border: 0;
     height: 3em;
     width: 30%;
     text-transform: uppercase;
+    &:hover {
+      background: darken($dark-red-button, 10%);
+    }
   }
   ::-webkit-input-placeholder {
    color: $black;
