@@ -1,9 +1,9 @@
-$red         :#D74B4E;
-$dark-red    :darken($red, 10%);
-$gray        :#515151;
-$off-white   :darken($white, 10%);
-$blue        :#79BACC;
+$red                           : #D74B4E;
+$dark-red                      : #C62929;
+$dark-red-button               : rgba(198, 41, 41, .8);
 
-$facebook    :#4B67A1;
-$twitter     :#55ACEE;
-$google      :#D94A35;
+$gray                          : #515151;
+$off-white                     : darken($white, 10%);
+
+$blue                          : #79BACC;
+$blue-header                   : rgba(119, 186, 205, .5);
