@@ -1,18 +1,4 @@
 @media #{$large-up} {
-	nav {
-		@include grid-column(12, $center: true);
-		margin-top: -1em;
-		margin-bottom: 75px;
-		padding-top: 1.2em;
-		padding-bottom: .2em;
-	    border-bottom: 5px solid $gray;
-		section.nav-links {
-			text-align: center;
-			a {
-			  padding: 1em .5em;	
-			}
-		}
-	}
 	article {
 		&.welcome {
 			section {
