@@ -3,19 +3,20 @@ article.about {
   background: url(../assets/img/about-us.jpg)no-repeat center center;
   background-size: cover;
   overflow-x: hidden;
-  section {
-   @include grid-column(6, $push: 1);
-  }
+
   h2 {
-    color: $dark-red;
+    background: $blue-header;
+    padding-left: 10px;
+    color: darken($gray, 20%);
+    max-width: 300px;
     font-size: 48px;
     font-weight: $med-font;
   }
+
   p {
     font-size: 18px;
-    // width: 600px;
-    // max-width: 100%;
   }
+
   &:after {
     display: block;
     height: 0;
@@ -23,4 +24,5 @@ article.about {
     border-bottom: 100px solid $white;
     border-left: 100vmax solid transparent;
   }
+
 }
