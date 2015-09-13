@@ -4,7 +4,7 @@ header {
   background-size: cover;
   min-height: 500px;
   nav {
-    background: $dark-red;
+    background: rgba(75, 87, 107, .40);
     ul {
       list-style: none;
       li {
@@ -14,12 +14,12 @@ header {
       }
     }
     a {
-      color: darken($dark-red, 25%);
+      color: $white;
       text-decoration: none;
       text-transform: uppercase;
       letter-spacing: 2px;
       &:hover {
-        background: $white;
+        border-bottom: 1px solid $white;
       }
     }
   }

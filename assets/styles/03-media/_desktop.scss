@@ -2,10 +2,10 @@
 	nav {
 		@include grid-column(12, $center: true);
 		margin-top: -1em;
-		margin-bottom: 2em;
+		margin-bottom: 75px;
 		padding-top: 1.2em;
 		padding-bottom: .2em;
-	    border-bottom: 5px solid $red;
+	    border-bottom: 5px solid $gray;
 		section.nav-links {
 			text-align: center;
 			a {
@@ -23,10 +23,28 @@
 				border-left: 8px solid $off-white;
 			}
 		}
+		&.about {
+			section {
+				@include grid-column(7, $push: 1);
+				h2 {
+				}
+			}
+		}
 		&.services {
 			section {
+				@include grid-row;
+			    @include grid-column(10, $center: true);
 				padding-top: 6em;
 				padding-bottom: 6em;
+				div {
+					@include grid-row;
+				p {
+					@include grid-column(9);
+				}
+				img {
+					@include grid-column(3, $float: right);
+				}
+				}
 			}
 		}
 		&.contact {
