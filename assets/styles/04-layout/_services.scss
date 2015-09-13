@@ -1,6 +1,3 @@
 article.services {
   @include grid-row;
-  section {
-    @include grid-column(10, $center: true);
-  }
 }
