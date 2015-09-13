@@ -47,8 +47,14 @@
      return false;
    }
   });
-   $('button').click(function() {
+  $('nav button').click(function() {
     $(this).toggleClass('expanded').siblings('div').slideToggle();
+    if('button.expanded') {
+     $('a[href]').click(function(){
+       $('nav div').css('display','none');
+       $('button').removeClass('expanded');
+     }); 
+    }
   });
 </script>
 </body>
