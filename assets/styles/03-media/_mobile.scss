@@ -6,15 +6,34 @@
   //     padding: 2em;
   //   }
   // }
-  article.welcome {
-    @include grid-row;
-    section {
-      @include grid-column(12);
-      height: auto;
+    article {
+    &.welcome {
+      @include grid-row;
+      section {
+        @include grid-column(12);
+      }
+      section.estimates{
+        @include grid-column(12);
+        border-top: 5px solid $off-white;
+      }
     }
-    section.estimates{
-      @include grid-column(12);
-      border-top: 5px solid $off-white;
+    &.about {
+      @include grid-row;
+      section {
+        @include grid-column(12);
+      }
+    }
+    &.services {
+      section {
+        padding-top: 6em;
+        padding-bottom: 6em;
+      }
+    }
+    &.contact {
+      section {
+        padding-top: 10em;
+        padding-bottom: 10em;
+      }
     }
   }
 }
