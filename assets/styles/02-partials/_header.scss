@@ -11,18 +11,27 @@ header {
     z-index: 999999;
     div {
       display: none;    
+      &:after {
+        content: '';
+        display: block;
+        border-bottom: 100vh solid  rgba(119, 186, 205, .8);
+      }
+      :first-child{
+        padding-top: 1em;
+      }
       a {
         display: block;
-        background: $dark-red-button;
-        color: $white;
-        padding: 20px 10px 5px 0;
+        background:  rgba(119, 186, 205, .8);
+        color: $black;
+        padding: 20px 10px 5px 15px;
         font-size: 46px;
-        text-align: center;
+        text-align: left;
         text-decoration: none;
+        letter-spacing: 5px;
+        text-transform: uppercase;
         &:hover,
         &:active,
         &:focus {
-          background: darken($dark-red, 3%);
         }
       } 
     }
