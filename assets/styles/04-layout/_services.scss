@@ -1,3 +1,10 @@
 article.services {
-  @include grid-row;
+	@include grid-row;
+	section {
+		div {
+			p {
+				padding-left: 0;
+			}
+		}
+	}
 }
