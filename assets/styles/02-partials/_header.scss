@@ -7,7 +7,6 @@ header {
     position: fixed;
     width: 100%;
     top: 0;
-    // height: 100%;
     z-index: 999999;
     div {
       display: none;    
@@ -65,5 +64,23 @@ header {
     width: 750px;
     padding: 5em 0 4em 0;
     margin: 0 auto;
+  }
+}
+@media #{$small-only} {
+  header {
+    min-height: 400px;
+    img {
+      margin-top: 100px;
+      padding: 1em;
+    }
+  }
+}
+@media #{$medium-only} {
+  header {
+    min-height: 400px;
+    img {
+      margin-top: 3em;
+      padding: 2em;
+    }
   }
 }
