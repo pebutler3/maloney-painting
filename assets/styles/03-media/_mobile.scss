@@ -1,11 +1,4 @@
 @media #{$small-only} {
-  // header {
-  //   min-height: 300px;
-  //   img {
-  //     margin: 4em 0;
-  //     padding: 2em;
-  //   }
-  // }
     article {
     &.welcome {
       @include grid-row;
