@@ -1,6 +1,6 @@
 .footer {
   @include grid-row;
-  background-color: #292c2f;
+  background-color: $black;
   text-align: center;
   font-size: 1.2rem;
   padding: 4rem;
