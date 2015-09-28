@@ -6,7 +6,6 @@
 			}
 			section.estimates{
 				@include grid-column(4);
-				border-left: 8px solid $off-white;
 			}
 		}
 		&.about {
